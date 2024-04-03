@@ -31,5 +31,7 @@ Login to Otaghak
     Sleep                            2s
     Close Browser
     Sleep                            2s
+feature 2 test
+    log        Doing feature 1
 *** Keywords ***
 robot -d
