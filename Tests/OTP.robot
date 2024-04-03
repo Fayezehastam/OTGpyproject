@@ -8,6 +8,7 @@ ${website_url}              https://otaghak.com/
 ${otp_entry_wait_time}      10
 *** Test Cases ***
 Login to Otaghak
+    [Tags]    smoke
     Open Browser    https://otaghak.com/   chrome
     Wait Until Page Contains    ورود / ثبت‌نام
     Maximize Browser Window
@@ -28,4 +29,4 @@ Login to Otaghak
     Click Element    //input[@tabindex='4']
     Input Text    //input[@tabindex='4']  123456
     Click Element    //button[@type='submit']
-    Sleep    5s
+    Sleep    2s

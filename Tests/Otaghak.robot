@@ -9,7 +9,7 @@ Library           SeleniumLibrary     timeout=0:00:10
 *** Test Cases ***
 Login to Otaghak
     [Documentation]                this is info about login
-    [Tags]                         1006    smoke    Contacts
+    [Tags]                         1006    smoke    Contacts   view
     Set Selenium Speed              .2 s
     Log                            Starting the test case!
     Open Browser                   https://otaghak.com/    chrome
@@ -25,11 +25,11 @@ Login to Otaghak
     Input Password                  //input[contains(@placeholder,'رمز عبور خود را وارد کنید')]    123456
     Click Element                   //button[contains(@type,'submit')]
     Sleep                           5s
-    Click Element                    //img[@alt='تصویر کاربر']
+    Click Element                    //img[@alt='تصویر کاربر']000
     sleep                           2s
     Click Element                    //button[contains(.,'خروج از حساب کاربری')]
     Sleep                            2s
     Close Browser
-
+    Sleep                            2s
 *** Keywords ***
 robot -d
