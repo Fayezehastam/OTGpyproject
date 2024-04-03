@@ -9,7 +9,7 @@ Library           SeleniumLibrary     timeout=0:00:10
 *** Test Cases ***
 Login to Otaghak
     [Documentation]                this is some info about login
-    [Tags]                         smoke    Contacts   view
+    [Tags]                         smoke    Contacts   view    search
     Set Selenium Speed              .2 s
     Log                            Starting the test case!
     Open Browser                   https://otaghak.com/    chrome
