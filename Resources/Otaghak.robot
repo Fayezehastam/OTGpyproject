@@ -6,7 +6,6 @@ Library           SeleniumLibrary
 #robot -d results Resources/Otaghak.robot   use this to run the shit
 
 *** Keywords ***
-
 Login to Otaghak
     Click Element                   //*[@id="homePage"]/div/div[1]/div/div/div[2]/div/button/span/span
     Wait Until Page Contains        ورود یا ثبت نام در اتاقک
