@@ -1,5 +1,4 @@
 *** Settings ***
-Documentation     Initial Keywords
 Library           SeleniumLibrary
 
 

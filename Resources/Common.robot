@@ -1,5 +1,4 @@
 *** Settings ***
-Documentation     Initial Keywords
 Library           SeleniumLibrary
 
 
@@ -17,3 +16,11 @@ Begin Web Test
 End Web Test
     Close Browser
     Log        تموم شد
+
+
+Insert testing data
+    Log    S the fuckin tart
+    
+    
+Cleanup Testing Data
+    log    And His Name is John Cena
