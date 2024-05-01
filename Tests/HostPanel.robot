@@ -8,13 +8,8 @@ Test Setup        Begin Web Test
 Test Teardown     End Web Test
 Suite Teardown    Cleanup Testing Data
 
-#robot -d results tests/Otaghak.robot   use this to run the shit
 *** Test Cases ***
-User Must be able to Logon And LogOut Successfully
-  [Documentation]        Initial Keywords
-  [Tags]                smoke  search
-  otaghak.Login to Otaghak
-  Options.OptionsButton
-  Options.Log Out from Otaghak
-
-
+Verify access to host panel with user type 1 or above.
+Verify denial of access to host panel with user type below 1.
+Verify the navigation to different pages within the host panel.
+Verify the loading of content on each page.

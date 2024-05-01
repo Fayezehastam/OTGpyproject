@@ -15,4 +15,7 @@ CallCenter
 OptionsButton
     Click Element    //img[contains(@alt,'تصویر کاربر')]
 
-Options.OptionsButton
+ Options.OptionsButton
+
+OtaghakMainPage
+    Click Button    //img[contains(@src,'https://cdn.otaghak.com/otg-images-new/Web/Icon/general/logotype-large.svg')]
