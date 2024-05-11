@@ -14,22 +14,25 @@ create a new room
     Sleep    1s
     HostRooms
     Sleep    2s
-    Click Element        //div[contains(@class,'detail-part')]
+    Click Element     //a[contains(.,'افزودن اقامتگاه جدید')]
     Sleep    2s
-    Click Element    //span[contains(.,' نمایش بیشتر')]
-    Sleep    1s
-    Click Element    //div[contains(.,'آپارتمان')]
-    Scroll Element Into View    //span[contains(.,' نمایش کمتر')]
+    Select Checkbox    ${locator}
     Sleep    1s
     Click Element    //p[contains(.,'دربست')]
     Sleep    1s
-   Click Element    //p[contains(.,'ثبت و مرحله بعد')]
-   Sleep    3
-   Click Element    //select[contains(@name,'countryId')]
-   Click Element    //p[contains(.,'ایران')]
-   Click Element    //select[contains(@name,'stateId')]
-   Click Element    //p[contains(.,'برن')]
-   Click Element    //select[contains(@name,'cityId')]
-   Click Element    //p[contains(.,'برن')]
-   Click Element    //textarea[contains(@name,'address')]
-   Input Text        name=Address قالب استاندارد وارد کردن آدرس کامل اقامتگاه به این شکل است: نام شهر یا استان، نام منطقه، نام اتوبان یا خیابان یا بلوار، نام کوچه، شماره پلاک به همراه شماره واحد (در صورت چند واحدی بودن ساختمان)
+    Click Element    //p[contains(.,'ثبت و مرحله بعد')]
+    Sleep    3
+    OptionsButton
+    Click Element    //p[contains(.,'ایران')]
+    Click Element    //select[contains(@name,'stateId')]
+    Click Element    //p[contains(.,'برن')]
+    Click Element    //select[contains(@name,'cityId')]
+    Click Element    //p[contains(.,'برن')]
+    Click Element    //textarea[contains(@name,'address')]
+    Input Text        name=Address قالب استاندارد وارد کردن آدرس کامل اقامتگاه به این شکل است: نام شهر یا استان، نام منطقه، نام اتوبان یا خیابان یا بلوار، نام کوچه، شماره پلاک به همراه شماره واحد (در صورت چند واحدی بودن ساختمان)
+*** Keywords ***
+    ${locator} =  /html/body/div[1]/main/main/div/div/div[2]/div[1]/div/div[1]/div
+
+
+
+    #

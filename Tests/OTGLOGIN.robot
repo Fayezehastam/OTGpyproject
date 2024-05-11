@@ -8,13 +8,13 @@ Test Setup        Begin Web Test
 Test Teardown     End Web Test
 Suite Teardown    Cleanup Testing Data
 
-#robot -d results tests/Otaghak.robot   use this to run the shit
+#robot -d results tests/OTGLOGIN.robot   use this to run the shit
 *** Test Cases ***
-User Must be able to Logon And LogOut Successfully
-  [Documentation]        Initial Keywords
-  [Tags]                smoke  search
+User should be able to Login And LogOut Successfully
+  [Documentation]         Initial Keywords
+  [Tags]                  smoke  search
   otaghak.Login to Otaghak
   Options.OptionsButton
   Options.Log Out from Otaghak
 
-
+#robot  -d -v BROWSER: Chrome -v  START_URL:https://develop.otaghak.com  tests/OTGLOGIN.robot

@@ -6,8 +6,7 @@ Resource    ../Resources/Otaghak.robot
 
 *** Keywords ***
 Begin Web Test
-    Log                            Starting the test case!
-    Open Browser                   about:blank   chrome
+    Open Browser                   about:blank   ${BROWSER}
     Maximize Browser Window
     Go To                           ${START_URL}
     Sleep                            2s

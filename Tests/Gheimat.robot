@@ -9,8 +9,8 @@ Resource    ../Resources/PO/Options.robot
 create a new room
     [Documentation]    user must be able to create a room with no errors
     Begin Web Test
-    Login To Otaghak
-    Go To    https://www.otaghak.com/newProfile/host/room/2445133/cancel-type/
+    
+    Go To    ${BROWSER}
     Click Element    //button[contains(.,'ثبت و مرحله بعد')]
     Sleep    3s
     Input Text    name=basePrice  15000.22
