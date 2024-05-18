@@ -10,4 +10,11 @@ Suite Teardown    Cleanup Testing Data
 
 *** Test Cases ***
 Not registered users should be able to surf through the website
-    Click Element    //*[@id="TopBannerWithSearchBox"]/div[2]/div[2]/div/div[1]/div[1]/div[1]
+    Sleep    2s
+    Click Element    //*[@id="TopBannerWithSearchBox"]/div[2]/div[2]/div/div[1]/div[1]
+    Sleep             3s
+    Input Text       //input[contains(@placeholder,'انتخاب مقصد')]     دیبا
+    sleep            1s
+    Click Element    //*[@id="TopBannerWithSearchBox"]/div[2]/div[2]/div/div[2]/button
+    Wait Until Page Contains    //span[contains(.,' اجاره ویلا')]
+    Sleep    10s

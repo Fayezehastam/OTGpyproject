@@ -8,7 +8,7 @@ Test Setup        Begin Web Test
 Test Teardown     End Web Test
 Suite Teardown    Cleanup Testing Data
 
-#robot -d results tests/OTGLOGIN.robot   use this to run the shit
+#robot -d results tests/LoginFlow.robot   use this to run the shit
 *** Test Cases ***
 User should be able to Login And LogOut Successfully
   [Documentation]         Initial Keywords
@@ -17,4 +17,16 @@ User should be able to Login And LogOut Successfully
   Options.OptionsButton
   Options.Log Out from Otaghak
 
-#robot  -d -v BROWSER: Chrome -v  START_URL:https://develop.otaghak.com  tests/OTGLOGIN.robot
+
+user should be able to change their password in case of forgetting password
+  [Documentation]         Initial Keywords
+  [Tags]                  smoke  search
+  Forget password
+  Options.OptionsButton
+  Options.Log Out from Otaghak
+
+
+
+
+
+#robot  -d -v BROWSER: Chrome -v  START_URL:https://develop.otaghak.com  tests/LoginFlow.robot

@@ -2,6 +2,7 @@
 Library           SeleniumLibrary
 Resource    ../Resources/Otaghak.robot
 
+
 #robot -d results Resources/Common.robot   use this to run the shit
 
 *** Keywords ***
