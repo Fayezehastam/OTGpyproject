@@ -12,7 +12,7 @@ Suite Teardown    Cleanup Testing Data
 *** Test Cases ***
 User should be able to Login And LogOut Successfully
   [Documentation]         Initial Keywords
-  [Tags]                  smoke  search
+  [Tags]                 OTG000001 SI000002
   otaghak.Login to Otaghak
   Options.OptionsButton
   Options.Log Out from Otaghak
@@ -20,7 +20,7 @@ User should be able to Login And LogOut Successfully
 
 user should be able to change their password in case of forgetting password
   [Documentation]         Initial Keywords
-  [Tags]                  smoke  search
+  [Tags]               OTG000001   sSI000003
   Forget password
   Options.OptionsButton
   Options.Log Out from Otaghak

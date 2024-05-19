@@ -12,6 +12,6 @@ Suite Teardown    Cleanup Testing Data
 *** Test Cases ***
 User Should be able to sign in successfully with a new phone number
   [Documentation]         Initial Keywords
-  [Tags]                  smoke  search
+  [Tags]                  OTG000001   SI000001
   otaghak.Sign In To Otaghak
   Sleep    5s
